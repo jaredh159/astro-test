@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroBlock from '../components/HeroBlock';
+import MainHeader from '../components/MainHeader';
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <MainHeader theme="violet" />
+    <div class="flex-grow">
+      <HeroBlock client:load />
+    </div>
+  </main>
+</Layout>
